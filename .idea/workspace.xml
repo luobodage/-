@@ -10,26 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99a0f647-222d-48cd-a441-e30bef626ef3" name="默认的" comment="2020/9/22 xiugai ciyun">
-      <change afterPath="$PROJECT_DIR$/.idea/GraduationProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ciyun.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jd_comment/jd_comment/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jd_comment/jd_comment/items.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jd_comment/jd_comment/middlewares.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jd_comment/jd_comment/pipelines.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jd_comment/jd_comment/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jd_comment/jd_comment/spiders/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jd_comment/jd_comment/spiders/jd_home.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jd_comment/jd_comment/spiders/start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jd_comment/scrapy.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jd_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd_main.py" afterDir="false" />
-    </list>
+    <list default="true" id="99a0f647-222d-48cd-a441-e30bef626ef3" name="默认的" comment="2020/9/22 xiugai ciyun" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -240,7 +221,7 @@
       <workItem from="1600858849572" duration="1749000" />
       <workItem from="1600923374158" duration="1101000" />
       <workItem from="1600931098743" duration="359000" />
-      <workItem from="1603592291621" duration="3209000" />
+      <workItem from="1603592291621" duration="3872000" />
     </task>
     <task id="LOCAL-00001" summary="01 add jd_01.py">
       <created>1600505646972</created>
@@ -291,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600819852275</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add scrapy 10.25">
+      <created>1603598588419</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1603598588419</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,7 +306,8 @@
     <MESSAGE value="xiugai" />
     <MESSAGE value="2020/9/20 add readme.md" />
     <MESSAGE value="2020/9/22 xiugai ciyun" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020/9/22 xiugai ciyun" />
+    <MESSAGE value="add scrapy 10.25" />
+    <option name="LAST_COMMIT_MESSAGE" value="add scrapy 10.25" />
   </component>
   <component name="WindowStateProjectService">
     <state x="335" y="128" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600752617011">
