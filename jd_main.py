@@ -31,19 +31,21 @@ def spider_comment(page=0):
     except:
         print('爬取失败')
 
-    r_json_str = r.text[20:-2]
+    print(r.text)
+    print(type(r.text))
+    # r_json_str = r.text[20:-2]
     # print("京东评论：" + r_json_str[:500])
-    r_json_obj = json.loads(r_json_str)
-    r_json_comments = r_json_obj['comments']
-    # print("京东评论数据：")
+    # r_json_obj = json.loads(r_json_str)
+    # r_json_comments = r_json_obj['comments']
+    # # print("京东评论数据：")
+    # # for r_json_comments in r_json_comments:
+    # #     print(r_json_comments['content'])
+    #
     # for r_json_comments in r_json_comments:
+    #     with open(comment_file_path, 'a+') as file:
+    #         file.write(r_json_comments['content'] + '\n')
+    #         file.write("===================================" + '\n\r')
     #     print(r_json_comments['content'])
-
-    for r_json_comments in r_json_comments:
-        with open(comment_file_path, 'a+') as file:
-            file.write(r_json_comments['content'] + '\n')
-            file.write("===================================" + '\n\r')
-        print(r_json_comments['content'])
 
 
 def batch_spider_comment():
