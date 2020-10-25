@@ -1,9 +1,15 @@
 import scrapy
-import requests
 import json
-import lxml.etree as le
+import os
+import time
+import random
+import jd_home1
+import jd_main
+import UserAgent
 
-number = 3136921
+number = jd_home1.spider_home()  # 获取产品id
+comment_file_path = 'id.txt'  # 文件存储位置
+headers = UserAgent.get_headers()  # 随机获取headers表头
 
 
 class JdHomeSpider(scrapy.Spider):
@@ -12,37 +18,39 @@ class JdHomeSpider(scrapy.Spider):
     # allowed_domains = [' ']
     # start_urls = ['http:// /']
 
-    def start_requests(self, page=0):
-        url = 'https://club.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98&productId={number}' \
-              '&score=0&sortType=5&page={page}&pageSize=10&isShadowSku=0&fold=1'.format(
-            page=page,
-            number=number
-        )
+    def start_requests(self):
+        number_page = 10
         try:
-            yield scrapy.Request(
-                url=url,
-                callback=self.parse1,
-                headers={
-                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36'
-                },
-
-            )
-            # print('京东评论数据：' + r.text[:500])
+            for page in range(1, number_page):
+                url = 'https://club.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98&productId={number}' \
+                      '&score=0&sortType=5&page={page}&pageSize=10&isShadowSku=0&fold=1'.format(
+                    page=page,
+                    number=number
+                )
+                yield scrapy.Request(
+                    url=url,
+                    callback=self.parse1,
+                    headers=headers,
+                )
+                time.sleep(random.random() * 2)  # 每次间隔2秒
+                # print('京东评论数据：' + r.text[:500])
+                if os.path.exists(comment_file_path):
+                    os.remove(comment_file_path)
         except:
             print('爬取失败')
 
     def parse1(self, response):
-
         r = response.text
-        print(r)
-        print(type(r))
         r_json_str = r[20:-2]
-        print("京东评论：" + r_json_str[:500])
         r_json_obj = json.loads(r_json_str)
         r_json_comments = r_json_obj['comments']
-        print("京东评论数据：")
         for r_json_comments in r_json_comments:
+            with open(comment_file_path, 'a+') as file:
+                file.write(r_json_comments['content'] + '\n')
+                file.write("===================================" + '\n\r')
             print(r_json_comments['content'])
+        jd_main.create_word_cloud()
+        # jd_home1.file_rename()
 
     def parse(self, response):
         pass

@@ -10,7 +10,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99a0f647-222d-48cd-a441-e30bef626ef3" name="默认的" comment="2020/9/22 xiugai ciyun" />
+    <list default="true" id="99a0f647-222d-48cd-a441-e30bef626ef3" name="默认的" comment="2020/9/22 xiugai ciyun">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jd_comment/jd_comment/spiders/id.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yun1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd_comment/jd_comment/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd_comment/jd_comment/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd_comment/jd_comment/spiders/jd_home.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd_comment/jd_comment/spiders/jd_home.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd_home.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd_home1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd_main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,7 +59,13 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\萝卜ovo\Desktop\毕业设计\GraduationProject" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.start">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -75,7 +90,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="jd_home" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="jd_home1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="GraduationProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -88,7 +103,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/jd_home.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\萝卜ovo\Desktop\毕业设计\GraduationProject\jd_home1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -183,17 +198,17 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.jd_home" />
       <item itemvalue="Python.jd_main" />
       <item itemvalue="Python.test01" />
       <item itemvalue="Python.pyqt01" />
       <item itemvalue="Python.start" />
+      <item itemvalue="Python.jd_home1" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.start" />
         <item itemvalue="Python.jd_main" />
-        <item itemvalue="Python.jd_home" />
+        <item itemvalue="Python.jd_home1" />
         <item itemvalue="Python.pyqt01" />
         <item itemvalue="Python.test01" />
       </list>
@@ -221,7 +236,7 @@
       <workItem from="1600858849572" duration="1749000" />
       <workItem from="1600923374158" duration="1101000" />
       <workItem from="1600931098743" duration="359000" />
-      <workItem from="1603592291621" duration="3872000" />
+      <workItem from="1603592291621" duration="6874000" />
     </task>
     <task id="LOCAL-00001" summary="01 add jd_01.py">
       <created>1600505646972</created>
@@ -279,7 +294,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603598588419</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="geigai">
+      <created>1603598800402</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1603598800402</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,7 +329,8 @@
     <MESSAGE value="2020/9/20 add readme.md" />
     <MESSAGE value="2020/9/22 xiugai ciyun" />
     <MESSAGE value="add scrapy 10.25" />
-    <option name="LAST_COMMIT_MESSAGE" value="add scrapy 10.25" />
+    <MESSAGE value="geigai" />
+    <option name="LAST_COMMIT_MESSAGE" value="geigai" />
   </component>
   <component name="WindowStateProjectService">
     <state x="335" y="128" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600752617011">
@@ -319,6 +342,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="626" y="220" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600512759516" />
+    <state x="708" y="369" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1603614643023">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="708" y="369" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1603614643023" />
     <state width="1340" height="679" key="GridCell.Tab.0.bottom" timestamp="1603594602057">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -395,10 +422,10 @@
       <screen x="0" y="0" width="1854" height="972" />
     </state>
     <state x="740" y="391" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1854.972@0.0.1854.972" timestamp="1600751559126" />
-    <state x="62" y="9" width="881" height="955" key="dock-window-1" timestamp="1603594836915">
+    <state x="62" y="9" width="881" height="955" key="dock-window-1" timestamp="1603614712757">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="62" y="9" width="881" height="955" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1603594836915" />
+    <state x="62" y="9" width="881" height="955" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1603614712757" />
     <state x="974" y="232" width="839" height="830" key="dock-window-2" timestamp="1603594727564">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

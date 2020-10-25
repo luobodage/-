@@ -7,58 +7,15 @@ import jieba
 import numpy as np
 from PIL import Image
 import matplotlib.pyplot as plt
-import jd_home
+import jd_home1
 
 from wordcloud import WordCloud
 
-WC_MASJ_IMG = "image/yun1.jpg"
+WC_MASJ_IMG = "yun1.jpg"
 comment_file_path = 'id.txt'
 WC_FONT_PATH = 'zitiku/汉仪楷体简.ttf'
-number = jd_home.spider_home()
+number = jd_home1.spider_home()
 
-
-def spider_comment(page=0):
-    # 爬取京东评论
-    url = 'https://club.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98&productId={number}' \
-          '&score=0&sortType=5&page={page}&pageSize=10&isShadowSku=0&fold=1'.format(
-        page=page,
-        number=number
-    )
-    try:
-        r = requests.get(url)
-        r.raise_for_status()
-        # print('京东评论数据：' + r.text[:500])
-    except:
-        print('爬取失败')
-
-    print(r.text)
-    print(type(r.text))
-    # r_json_str = r.text[20:-2]
-    # print("京东评论：" + r_json_str[:500])
-    # r_json_obj = json.loads(r_json_str)
-    # r_json_comments = r_json_obj['comments']
-    # # print("京东评论数据：")
-    # # for r_json_comments in r_json_comments:
-    # #     print(r_json_comments['content'])
-    #
-    # for r_json_comments in r_json_comments:
-    #     with open(comment_file_path, 'a+') as file:
-    #         file.write(r_json_comments['content'] + '\n')
-    #         file.write("===================================" + '\n\r')
-    #     print(r_json_comments['content'])
-
-
-def batch_spider_comment():
-    """
-    批量爬取评价
-    :return:
-    """
-    # 写入数据前先清空之前的数据
-    if os.path.exists(comment_file_path):
-        os.remove(comment_file_path)
-    for i in range(5):  # 爬取前五页评论
-        spider_comment(i)
-        time.sleep(random.random() * 2)  # 每次间隔2秒
 
 
 def cut_word():
@@ -94,6 +51,6 @@ def create_word_cloud():
 
 
 if __name__ == '__main__':
-    batch_spider_comment()
+
     create_word_cloud()
-    jd_home.file_rename()
+    jd_home1.file_rename()
