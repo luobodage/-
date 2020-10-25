@@ -45,6 +45,7 @@ def spider_home():
         for num in number:
             # print(num)
             return num
+        # file_rename()
     except:
         print('爬取失败')
 

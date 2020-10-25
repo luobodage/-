@@ -14,7 +14,7 @@ from wordcloud import WordCloud
 WC_MASJ_IMG = "yun1.jpg"
 comment_file_path = 'id.txt'
 WC_FONT_PATH = 'zitiku/汉仪楷体简.ttf'
-number = jd_home1.spider_home()
+
 
 
 
@@ -53,4 +53,4 @@ def create_word_cloud():
 if __name__ == '__main__':
 
     create_word_cloud()
-    jd_home1.file_rename()
+    jd_home1.spider_home()

@@ -8,7 +8,7 @@ import jd_main
 import UserAgent
 
 number = jd_home1.spider_home()  # 获取产品id
-comment_file_path = 'id.txt'  # 文件存储位置
+comment_file_path = '../../../id.txt'  # 文件存储位置
 headers = UserAgent.get_headers()  # 随机获取headers表头
 
 
@@ -49,8 +49,7 @@ class JdHomeSpider(scrapy.Spider):
                 file.write(r_json_comments['content'] + '\n')
                 file.write("===================================" + '\n\r')
             print(r_json_comments['content'])
-        jd_main.create_word_cloud()
-        # jd_home1.file_rename()
+
 
     def parse(self, response):
         pass
